@@ -4,8 +4,7 @@
 ### If you seriously want to do so, you must contact us via email (redlinecity@protonmail.com)
 
 # ***GERMAN***
-Ein simples GTA V HUD-Script, das...
-..die aktuelle **Straße**, **Uhrzeit**, **Himmelsrichtung** und den aktuellen **Bezirk** anzeigt.
+Ein simples GTA V HUD-Script, das die aktuelle **Straße**, **Uhrzeit**, **Himmelsrichtung** und den aktuellen **Bezirk** anzeigt.
 
 # 🔧 Features
 
@@ -25,8 +24,7 @@ Ein simples GTA V HUD-Script, das...
 
 
 # ***ENGLISH***
-A simple GTA V HUD script that...
-..displays the current **street**, **time**, **direction** and the current **district**.
+A simple GTA V HUD script that displays the current **street**, **time**, **direction** and the current **district**.
 
 # 🔧 Features
 
