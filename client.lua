@@ -1,4 +1,4 @@
--- Richtung berechnen (8 Himmelsrichtungen)
+-- Richtung berechnen. // change direction.
 function getDirection(heading)
     local directions = {
         "N", "NW", "W", "SW",
@@ -12,7 +12,7 @@ CreateThread(function()
     while true do
         Wait(300)
 
-        -- Check ob Pause-Menü offen ist – wenn ja, überspringen
+        -- Check ob Pause-Menü offen ist. Wenn ja, überspringen. // Check whether the pause menu is open. If so, skip.
         if IsPauseMenuActive() then
             SendNUIMessage({ action = "toggleHud", show = false })
         else
@@ -29,7 +29,7 @@ CreateThread(function()
             local zone = GetLabelText(GetNameOfZone(coords.x, coords.y, coords.z))
             local dir = getDirection(heading)
 
-            -- HUD anzeigen & Daten senden
+            -- HUD anzeigen & Daten senden // Show HUD & send data
             SendNUIMessage({
                 action = "toggleHud", show = true
             })
