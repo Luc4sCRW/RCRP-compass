@@ -42,3 +42,10 @@ A simple GTA V HUD script that displays the current **street**, **time**, **dire
  `            ensure RCRP-STHUD            `
 3. decide on a design from the HTML folder (time by the district OR time above the street name)
 --> if you have decided, then simply put the .js, .css and .html into the html folder
+
+
+# DESIGN 1
+<img width="311" height="260" alt="Screenshot 2025-12-08 211332" src="https://github.com/user-attachments/assets/81d61d14-2e25-454d-8971-c2b120c51c55" />
+
+# DESIGN 2
+<img width="316" height="290" alt="Screenshot 2025-12-08 211406" src="https://github.com/user-attachments/assets/d6b663f3-3599-4f4b-83eb-29f506298b6d" />
