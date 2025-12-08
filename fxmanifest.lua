@@ -2,8 +2,8 @@ fx_version 'cerulean'
 game 'gta5'
 
 author 'REDLINE CITY RP | RCRP'
-description 'Direction HUD (Street & Time)'
-version '3.0'
+description 'Street & Time HUD (with direction and district)'
+version '1.0 (Official Release)'
 
 client_script 'client.lua'
 
