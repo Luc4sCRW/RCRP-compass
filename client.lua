@@ -29,7 +29,7 @@ CreateThread(function()
             local zone = GetLabelText(GetNameOfZone(coords.x, coords.y, coords.z))
             local dir = getDirection(heading)
 
-            -- HUD anzeigen & Daten senden // Show HUD & send data
+            -- HUD anzeigen & Daten senden. // Show HUD & send data.
             SendNUIMessage({
                 action = "toggleHud", show = true
             })
