@@ -1,5 +1,8 @@
 # 📍 REDLINE CITY RP - STREET & TIME HUD (RCRP-STHUD)
 
+## YOU CAN CHANGE THE CODE, BUT YOU ARE NOT ALLOWED TO REUPLOAD THE HUD TO ANY PLATFORM!
+### If you seriously want to do so, you must contact us via email (redlinecity@protonmail.com)
+
 # ***GERMAN***
 Ein simples GTA V HUD-Script, das...
 ..die aktuelle **Straße**, **Uhrzeit**, **Himmelsrichtung** und den aktuellen **Bezirk** anzeigt.
