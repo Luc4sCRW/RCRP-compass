@@ -1,0 +1,37 @@
+#hud {
+    position: absolute;
+    top: 73vh;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px black;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#directionStreet {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.direction {
+    color: #ff3131;
+    font-weight: bold;
+}
+
+
+#timeZone {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#zone {
+    font-size: 13px;
+    color: #ffffff;
+}
