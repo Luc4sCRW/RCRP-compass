@@ -1,42 +1,59 @@
 -- Richtung berechnen. // change direction.
-function getDirection(heading)
-    local directions = {
-        "N", "NW", "W", "SW",
-        "S", "SE", "E", "NE"
-    }
-    local index = math.floor((heading + 22.5) / 45) % 8
+local function getDirection(heading)
+    local directions = { "N", "NW", "W", "SW", "S", "SE", "E", "NE" }
+    local index = math.floor((heading % 360 + 22.5) / 45) % 8
     return directions[index + 1]
 end
 
 CreateThread(function()
+    local hudVisible = false
+    local lastCoords = vector3(0.0, 0.0, 0.0)
+    local street, zone = "", ""
+
     while true do
         Wait(300)
 
-        -- Check ob Pause-Menü offen ist. Wenn ja, überspringen. // Check whether the pause menu is open. If so, skip.
+-- Check ob Pause-Menü offen ist. Wenn ja, HUD ausblenden. // check if pause menu is open. If so, hide HUD.
         if IsPauseMenuActive() then
-            SendNUIMessage({ action = "toggleHud", show = false })
+            if hudVisible then
+                SendNUIMessage({
+                    action = "toggleHud",
+                    show = false
+                })
+                hudVisible = false
+            end
         else
-            local hour = GetClockHours()
-            local minute = GetClockMinutes()
-            local time = string.format("%02d:%02d", hour, minute)
+            if not hudVisible then
+                SendNUIMessage({
+                    action = "toggleHud",
+                    show = true
+                })
+                hudVisible = true
+            end
 
             local ped = PlayerPedId()
             local coords = GetEntityCoords(ped)
             local heading = GetEntityHeading(ped)
 
-            local streetHash, _ = GetStreetNameAtCoord(coords.x, coords.y, coords.z)
-            local street = GetStreetNameFromHashKey(streetHash)
-            local zone = GetLabelText(GetNameOfZone(coords.x, coords.y, coords.z))
-            local dir = getDirection(heading)
+            -- Straße und Zone neu holen, wenn Spieler sich bewegt hat. // refresh street and zone when player has moved.
+            if #(coords - lastCoords) > 5.0 then
+                local streetHash = GetStreetNameAtCoord(coords.x, coords.y, coords.z)
+                street = GetStreetNameFromHashKey(streetHash)
+                zone = GetLabelText(GetNameOfZone(coords.x, coords.y, coords.z))
+                lastCoords = coords
+            end
 
-            -- HUD anzeigen & Daten senden. // Show HUD & send data.
-            SendNUIMessage({
-                action = "toggleHud", show = true
-            })
+            -- Uhrzeit // time
+            local time = string.format(
+                "%02d:%02d",
+                GetClockHours(),
+                GetClockMinutes()
+            )
 
+            -- HUD aktualisieren // update HUD
             SendNUIMessage({
                 action = "updateHUD",
-                direction = dir,
+                direction = getDirection(heading),
                 street = street,
                 zone = zone,
                 time = time
