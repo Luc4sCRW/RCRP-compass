@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'REDLINE CITY RP | RCRP'
 description 'Street & Time HUD (with direction and district)'
-version '1.0 (Official Release)'
+version '1.1 (Official Release)'
 
 client_script 'client.lua'
 
