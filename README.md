@@ -11,7 +11,6 @@ Ein simples GTA V HUD-Script, das die aktuelle **Straße**, **Uhrzeit**, **Himme
 
 - Aktuelle Ingame Uhrzeit
 - Straße & Bezirk basierend auf Spielerposition 
-- "Kompass"
 - Ein-/Ausblenden bei GTA MAP Menu
 - Einfach anpassbar
 
@@ -31,7 +30,6 @@ A simple GTA V HUD script that displays the current **street**, **time**, **dire
 
 - Current ingame time
 - Street & district based on player position 
-- "Compass"
 - Show/hide in GTA MAP menu
 - Easily customizable
 
