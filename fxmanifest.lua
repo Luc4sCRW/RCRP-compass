@@ -1,8 +1,8 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'REDLINE CITY RP | RCRP'
-description 'Compass (with direction and district)'
+author 'Luc4s_CRW'
+description 'REDLINE CITY RP | RCRP - Compass'
 version '1.1 (Official Release)'
 
 client_script 'client.lua'
