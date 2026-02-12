@@ -50,6 +50,7 @@ A simple GTA V HUD script that displays the current **street**, **time**, **dire
 
 # UPDATES
 *Dec 9, 2025* - changed something in the HTML **(V 1.0)**
+
 *Feb 11, 2026* - improved performance (updated client.lua) **(V 1.1)**
 
 
