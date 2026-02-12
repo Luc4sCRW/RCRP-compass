@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Luc4s_CRW'
 description 'REDLINE CITY RP | RCRP - Compass'
-version '1.1 (Official Release)'
+version '1.1 (optimized)'
 
 client_script 'client.lua'
 
