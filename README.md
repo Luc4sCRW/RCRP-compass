@@ -74,7 +74,6 @@ You are NOT allowed to:
 - Claim this UI as your own work
 
 
-Distribute edited versions
 This project remains the intellectual property of Luc4s_CRW.
 
 All rights reserved.
