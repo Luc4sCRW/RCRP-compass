@@ -1,9 +1,21 @@
+----------------------------------------------------- v1.2 -----------------------------------------------------
 -- Richtung berechnen. // change direction.
 local function getDirection(heading)
     local directions = { "N", "NW", "W", "SW", "S", "SE", "E", "NE" }
     local index = math.floor((heading % 360 + 22.5) / 45) % 8
     return directions[index + 1]
 end
+
+local useRealTime = false
+-- Command
+RegisterCommand("ct", function()
+    useRealTime = not useRealTime
+    if useRealTime then
+        print("HUD: Echtzeit aktiviert")
+    else
+        print("HUD: Ingame-Zeit aktiviert")
+    end
+end, false)
 
 CreateThread(function()
     local hudVisible = false
@@ -13,7 +25,7 @@ CreateThread(function()
     while true do
         Wait(300)
 
--- Check ob Pause-Menü offen ist. Wenn ja, HUD ausblenden. // check if pause menu is open. If so, hide HUD.
+        -- Check ob Pause-Menü offen ist. Wenn ja, HUD ausblenden. // check if pause menu is open. If so, hide HUD.
         if IsPauseMenuActive() then
             if hudVisible then
                 SendNUIMessage({
@@ -44,11 +56,15 @@ CreateThread(function()
             end
 
             -- Uhrzeit // time
-            local time = string.format(
-                "%02d:%02d",
-                GetClockHours(),
-                GetClockMinutes()
-            )
+            local hours, minutes
+            if useRealTime then
+                local year, month, day, hour, minute, second = GetLocalTime()
+                hours, minutes = hour, minute
+            else
+                hours, minutes = GetClockHours(), GetClockMinutes()
+            end
+
+            local time = string.format("%02d:%02d", hours, minutes)
 
             -- HUD aktualisieren // update HUD
             SendNUIMessage({
