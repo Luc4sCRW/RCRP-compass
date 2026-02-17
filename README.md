@@ -9,7 +9,7 @@ Ein simples GTA V HUD-Script, das die aktuelle **Straße**, **Uhrzeit**, **Himme
 
 # 🔧 Features
 
-- Aktuelle Ingame Uhrzeit
+- Aktuelle Ingame Uhrzeit ODER aktuelle Echtzeit
 - Straße & Bezirk basierend auf Spielerposition 
 - Ein-/Ausblenden bei GTA MAP Menu
 - Einfach anpassbar
@@ -28,7 +28,7 @@ A simple GTA V HUD script that displays the current **street**, **time**, **dire
 
 # 🔧 Features
 
-- Current ingame time
+- Current ingame time OR current realtime
 - Street & district based on player position 
 - Show/hide in GTA MAP menu
 - Easily customizable
@@ -49,9 +49,11 @@ A simple GTA V HUD script that displays the current **street**, **time**, **dire
 <img width="316" height="290" alt="Screenshot 2025-12-08 211406" src="https://github.com/user-attachments/assets/d6b663f3-3599-4f4b-83eb-29f506298b6d" />
 
 # UPDATES
-*Dec 9, 2025* - changed something in the HTML **(V 1.0)**
+*Dec 9, 2025* - changed something in the HTML **(v1.0)**
 
-*Feb 11, 2026* - improved performance (updated client.lua) **(V 1.1)**
+*Feb 11, 2026* - improved performance (updated client.lua) **(v1.1)**
+
+*Feb 17, 2026* - added Command to switch between ingame- and realtime **(v1.2)**
 
 
 # *** LICENSE ***
