@@ -11,9 +11,9 @@ local useRealTime = false
 RegisterCommand("ct", function()
     useRealTime = not useRealTime
     if useRealTime then
-        print("HUD: Echtzeit aktiviert")
+        print("HUD: Realtime activated")
     else
-        print("HUD: Ingame-Zeit aktiviert")
+        print("HUD: Ingame time activated")
     end
 end, false)
 
