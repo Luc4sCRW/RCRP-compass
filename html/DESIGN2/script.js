@@ -20,5 +20,3 @@ window.addEventListener('message', function (event) {
         }
     }
 });
-
-// DESIGN 2 made with ChatGPT
