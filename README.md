@@ -49,7 +49,7 @@ A simple GTA V HUD script that displays the current **street**, **time**, **dire
 
 # UPDATES
 
-Updates for scripts are always announced on the Discord server. So feel free to join the Discord server to stay up to date. - I wont use the “Releases” feature of GitHub.
+Updates for scripts are always announced on the Discord server. So feel free to join the Discord server to stay up to date.
 
 *Dec 9, 2025* - changed something in the HTML **(v1.0)**
 
