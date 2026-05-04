@@ -1,10 +1,10 @@
 # 📍 REDLINE CITY RP - COMPASS (RCRP-compass) | v1.2
 
 ‼️ ***YOU CAN CHANGE THE CODE, BUT YOU ARE NOT ALLOWED TO REUPLOAD THE HUD TO ANY PLATFORM!*** ‼️
+    **IF YOU FIND BUGS, ... PLEASE JOIN THE DISCORD!**
 
 # ***GERMAN***
 Ein simples GTA V HUD-Script, das die aktuelle **Straße**, **Uhrzeit**, **Himmelsrichtung** und den aktuellen **Bezirk** anzeigt.
-    **IF YOU FIND BUGS, ... PLEASE JOIN THE DISCORD!**
 
 # 🔧 Features
 
