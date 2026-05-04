@@ -4,6 +4,7 @@
 
 # ***GERMAN***
 Ein simples GTA V HUD-Script, das die aktuelle **Straße**, **Uhrzeit**, **Himmelsrichtung** und den aktuellen **Bezirk** anzeigt.
+    **IF YOU FIND BUGS, ... PLEASE JOIN THE DISCORD!**
 
 # 🔧 Features
 
